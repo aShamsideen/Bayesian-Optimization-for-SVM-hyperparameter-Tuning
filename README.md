@@ -5,7 +5,7 @@ This project demonstrates how to use Bayesian Optimization to tune hyperparamete
 The optimization process aims to maximize the ROC AUC score, ensuring the model achieves strong discriminative performance between malignant and benign cases.
 
 
-📌 Features of the Code
+Features of the Code
 
 * Loads the Breast Cancer dataset from sklearn.datasets.
 
@@ -23,14 +23,14 @@ The optimization process aims to maximize the ROC AUC score, ensuring the model 
 
   
 
-🚀 Dependencies
+Dependencies
 
 Make sure you have the following Python packages installed:
 pip install numpy matplotlib scikit-learn bayesian-optimization
 
 
 
-⚙️ Code Workflow
+Code Workflow
 1. Data Preparation
 
   * Load the dataset
@@ -75,7 +75,7 @@ pbounds = {"C": [0.01, 10], "degree": [1, 5]}
 * Plot optimization progress:
 
 
-📊 Example Output:
+Example Output:
 Best result: {'C': 4.23, 'degree': 3}; f(x) = 0.994
 
 This means the optimizer found that an SVM with C=4.23 and degree=3 achieved an ROC AUC score of 0.994.
